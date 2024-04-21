@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:uap8="http://schemas.microsoft.com/appx/manifest/uap/windows10/8"
+  xmlns:desktop10="http://schemas.microsoft.com/appx/manifest/desktop/windows10/10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap uap3 uap8 rescap">
+
+  <Identity
+    Name="16d56389-2b14-4f8b-b2ca-8e47535932e4"
+    Publisher="CN=maste"
+    Version="1.0.11.0" />
+
+  <Properties>
+    <DisplayName>Your App Name</DisplayName>
+    <PublisherDisplayName>Elijah Lopez</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="$targetentrypoint$">
+      <uap:VisualElements
+        DisplayName="Your App Name"
+        Description="MyAppPackagingWindows"
+        BackgroundColor="transparent"
+        Square150x150Logo="Images\Square150x150Logo.png"
+        Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" >
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Images\SplashScreen.png" />
+      </uap:VisualElements>
+
+      <Extensions>
+        <uap3:Extension Category="windows.appExecutionAlias" >
+          <uap3:AppExecutionAlias>
+            <uap8:ExecutionAlias Alias="nvm2.exe" />
+          </uap3:AppExecutionAlias>
+        </uap3:Extension>
+      </Extensions>
+
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>
