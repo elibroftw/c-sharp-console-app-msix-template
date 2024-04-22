@@ -43,7 +43,7 @@ AOT is amazing and exactly what C# needed for deeloeprs to venture into tooling 
 
 ### Future Plans
 
-- Linux packaging ([AppImage](https://kuiper.zone/publish-appimage-dotnet/), GUI installer?)
+- Linux packaging ([AppImage](https://kuiper.zone/publish-appimage-dotnet/),[Flatpak](https://gist.github.com/ssokolow/db565fd8a82d6002baada946adb81f68) GUI installer?)
 - I have my doubts about using C# for desktop, but it's definitely the king of the Windows Installer experience
     - But self publishing!
 - MacOS packaging ... just kidding
