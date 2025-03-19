@@ -14,7 +14,7 @@ For _desktop_ apps, it's clear as per the [built-in template and documentation](
 - Difficulty before this template: Hard. For reference, something harder than this is debugging C++ cross-compilation linking bugs
 - Difficult after this template: Moderate
 - Was able to build an installable MSIX
-- Was able to run the MSXI from the terminal using an alias (App name is "Your App Name", project name is jibberish, and I could use it from the terminal via `nvm2` as intended)
+- Was able to run the MSIX from the terminal using an alias (App name is "Your App Name", project name is jibberish, and I could use it from the terminal via `nvm2` as intended)
 - Works with Nuget Dependencies. I used Spectre.Console
 - Had trouble compiling for Neutral / AnyCPU, so stuck with x64
     - I'm sure AMD64 would work as well
